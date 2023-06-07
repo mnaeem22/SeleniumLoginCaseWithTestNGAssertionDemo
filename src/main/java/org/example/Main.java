@@ -1,18 +1,17 @@
 package org.example;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 
 public class Main {
     public static void main(String[] args) {
 
-        ChromeOptions co = new ChromeOptions();
-        co.addArguments("--remote-allow-origins=*");
-        WebDriver driver = new ChromeDriver(co);
+        //ChromeOptions co = new ChromeOptions();
+     //   co.addArguments("--remote-allow-origins=*");
+        WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://demo.guru99.com/test/newtours/");
         WebElement userNameTextField = driver.findElement(By.name("userName"));
