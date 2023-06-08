@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 
         //ChromeOptions co = new ChromeOptions();
-     //   co.addArguments("--remote-allow-origins=*");
+
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://demo.guru99.com/test/newtours/");
