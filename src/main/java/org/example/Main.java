@@ -11,6 +11,7 @@ public class Main {
 
         //ChromeOptions co = new ChromeOptions();
         // This is my new change
+        // This is my new change
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://demo.guru99.com/test/newtours/");
