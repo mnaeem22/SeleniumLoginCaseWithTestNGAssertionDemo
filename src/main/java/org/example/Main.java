@@ -24,7 +24,7 @@ public class Main {
         //Dashboard
         WebElement successMessage = driver.findElement(By.xpath("/html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td/h3"));
         String successMessageText = successMessage.getText();
-        String expectedMessageText = "Login Not Successfully";
+        String expectedMessageText = "Login Successfully";
         Assert.assertEquals(successMessageText,expectedMessageText);
         driver.quit();
     }
